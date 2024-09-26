@@ -14,6 +14,7 @@ public class SwitchCalculator {
 		System.out.println("3. Pasta - $9.99");
 		System.out.println("4. Salad - $6.99");
 		System.out.println("5. Exit");
+		System.out.println("5. Exit");
 		
 		
 		int choice = scanner.nextInt();
