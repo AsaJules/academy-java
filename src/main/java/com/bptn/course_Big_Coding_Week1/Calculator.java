@@ -38,7 +38,7 @@ public class Calculator {
 			System.out.print("The sum of the numbers " + firstNumber + " and " + secondNumber + " is = "+result);
 		}
 		else if( choice == 2) {
-			result = firstNumber + secondNumber;
+			result = firstNumber - secondNumber;
 			System.out.print("The subtraction of the numbers " + firstNumber + " and " + secondNumber + " is = "+result);
 		}
 		else if( choice == 3) {
@@ -74,9 +74,9 @@ public class Calculator {
 					number = scanner.nextInt();
 					
 				if(choice == 0) {
-				System.out.print("Invalid choice! Please make a valid choice: ");
-				}
-				}
+				System.out.print("Invalid choice! Please make a valid choice");
+		}
+			}
 		}
 		
 		
