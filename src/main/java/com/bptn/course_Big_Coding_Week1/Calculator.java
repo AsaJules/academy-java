@@ -27,7 +27,8 @@ public class Calculator {
 		//accept users choice
 		choice = scanner.nextInt();
 		
-		if(choice == 1 || choice == 2 || choice == 3 || choice == 4) { // conditional statements
+		if(choice == 0 || choice == 1 || choice == 2 || choice == 3 || choice == 4) { // conditional statements
+		System.out.println("Invalid choice! Please make a valid choice");
 		System.out.print("Enter the first number: ");
 		firstNumber = scanner.nextDouble();
 		
@@ -67,7 +68,15 @@ public class Calculator {
 				result = 1/number;
 				System.out.print(" The reciprocal of a number " + number + " is = " + result);
 			}
-				
+			
+			else {
+				System.out.print("Invalid choice! Please make a valid choice: ");
+					number = scanner.nextInt();
+					
+				if(choice == 0) {
+				System.out.print("Invalid choice! Please make a valid choice: ");
+				}
+				}
 		}
 		
 		
