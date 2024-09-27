@@ -37,6 +37,7 @@ public class StringOperations {
 			System.out.println("Reverse the string");
 			System.out.println("Enter a string");
 			userInput1 = scanner.next();
+			// reverse check
 			String reversed = new StringBuilder(userInput1) . reverse().toString();
 			System.out.println(reversed);
 			
@@ -45,7 +46,7 @@ public class StringOperations {
 			System.out.println("Concatenate the string");
 			System.out.println("Enter the first string");
 			userInput1 = scanner.next();
-			
+			// concatenate check
 			System.out.println("Enter the second string");
 			userInput2 = scanner.next();
 			
@@ -54,7 +55,7 @@ public class StringOperations {
 			System.out.println("String comparizon");
 			System.out.println("Enter the first string");
 			userInput1 = scanner.next();
-			
+			// Comparison check
 			System.out.println("Enter the second string");
 			userInput2 = scanner.next();
 		}
@@ -62,13 +63,24 @@ public class StringOperations {
 			System.out.println("Length of a string");
 			System.out.println("Enter a string");
 			userInput1 = scanner.next();
-			
+			// length of string check
 			System.out.println("Enter the second string");
 			userInput2 = scanner.next();
-		 
+		}
+		else{
+			System.out.println("Invalid choice! Please make a valid choice.");
+			doAgain = scanner.next();
+			if(doAgain.toLowerCase().equals("n")) {
+				tryAgain = false;
+				// user choice
+			} else {
+				choice = scanner.nextInt();
+				
+			}
 		}
 			
 	}while (tryAgain);	
+		System.out.println("exited");
 		scanner.close();	
 	
 		
