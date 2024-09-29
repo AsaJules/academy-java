@@ -33,7 +33,7 @@ public class NumberGuessingGame {
 		            }
 		        }
 
-		        scanner.close(); // Close the scanner to prevent resource leaks
+		        scanner.close(); // Close the scanner 
 		    }
 		
 
