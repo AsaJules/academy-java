@@ -10,9 +10,13 @@ public class BankSystem {
 		BankAccount newTestAccount = new BankAccount("123456", 600.00);
 		newTestAccount.displayAccountInfo();
 		
-		SavingsAccount myAccount = new SavingsAccount("SAVINGS123", 500.00, 1.00);
-		myAccount.applyInterest();
-		myAccount.displayAccountInfo();
+		SavingsAccount mySavingsAccount = new SavingsAccount("SAVINGS123", 500.00, 1.00);
+		mySavingsAccount.applyInterest();
+		mySavingsAccount.displayAccountInfo();
+		
+		ChequingAccount myChequingAccount = new ChequingAccount("1234", 500, 200);
+		myChequingAccount.withdraw(300);
+		myChequingAccount.displayAccountInfo();
 		
 
 	}
