@@ -20,6 +20,10 @@ public class Player {
 		// TODO Auto-generated constructor stub
 	}
 
+	public Player(String nextLine, String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	// create getter methods
     public String getName() {
         return name;

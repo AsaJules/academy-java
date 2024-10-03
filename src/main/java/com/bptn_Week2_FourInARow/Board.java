@@ -196,4 +196,14 @@ public class Board {
         board2.printBoard();
     }
 
+	public void initialize() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean addToken(String col, int playerNumber) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
 }
