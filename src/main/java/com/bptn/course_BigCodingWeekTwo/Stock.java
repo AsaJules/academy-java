@@ -20,8 +20,8 @@ public class Stock {
 
 	public void adjustPrice(int change) {
 		price += change;
-		percentChange = (change / this.price) * 100;
-		marketCap = totalShares * price;
+		percentChange = ((double) change / price) * 100;
+		marketCap = (long) totalShares * price;
 	}
 
 	public String toString() {
