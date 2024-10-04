@@ -1,48 +1,48 @@
 package com.bptn.course.course_Week2_FourInARow;
 
-	import java.util.Scanner;
+import java.util.Scanner;
 
-	public class Game {
+public class Game {
 
-	    private Player[] players;
-	    private Board board;
-	    private static Scanner scanner = new Scanner(System.in);
+	private Player[] players;
+	private Board board;
+	private static Scanner scanner = new Scanner(System.in);
 
-	    public Game() {
-	        // Let's default it two players for now. Later, you can improve upon this to allow the game creator to choose how many players are involved.
-	       this.players = new Player[2]; // Initialize players array for two players
-	        this.board = new Board(); // Initialize the board
-	    }
+	public Game() {
 
-	    public void setUpGame() {
-	        System.out.println("Enter player 1's name: ");
-	        players[0] = new Player(scanner.nextLine(), "1");
+		this.players = new Player[2]; // Initialize players array for two players
+		this.board = new Board(); // Initialize the board
+	}
 
-	        String playerTwoName = null;
-	        do {
-	        System.out.println("Enter player 2's name: ");
-	        String playerTwoName1 = scanner.nextLine();
-	        /** add logic to prevent a user from giving a second name that's equal to the first. Allow the user to try as long as the names are not different.*/
+	public void setUpGame() {
+		System.out.println("Enter player 1's name: ");
+		players[0] = new Player(scanner.nextLine(), "1");
 
-	         //wrap the code in here with a conditional block that enables the check described above. 
-	        if (playerTwoName1.equals(players[0].getName())) {
-	                System.out.println("Error! Both Players cannot have the same name.");
-	            }
-	        } while (playerTwoName.equals(players[0].getName()));
-	        
-	        players[1] = new Player(playerTwoName, "2");
+		String playerTwoName = null;
+		do {
+			System.out.println("Enter player 2's name: ");
+			String playerTwoName1 = scanner.nextLine();
 
-	        // set up the board using the appropriate method
-	        // print the board the using appropriate method
-	        board.initialize(); // Assume there's an initialize method in the Board class
-	        board.printBoard(); // Assume there's a print method in the Board class to display the board
-	    }
+			// wrap the code in here with a conditional block that enables the check
+			// described above.
+			if (playerTwoName1.equals(players[0].getName())) {
+				System.out.println("Error! Both Players cannot have the same name.");
+			}
+		} while (playerTwoName.equals(players[0].getName()));
 
-	    public void printWinner(Player player) {
-	        System.out.println(player.getName() + " is the winner");
-	    }
+		players[1] = new Player(playerTwoName, "2");
 
-	    public void playerTurn(Player currentPlayer) {
+		// set up the board using the appropriate method
+		// print the board the using appropriate method
+		board.initialize(); // Assume there's an initialize method in the Board class
+		board.printBoard(); // Assume there's a print method in the Board class to display the board
+	}
+
+	public void printWinner(Player player) {
+		System.out.println(player.getName() + " is the winner");
+	}
+
+	public void playerTurn(Player currentPlayer) {
 	        String col = currentPlayer.makeMove();
 	        do {
 	            col = currentPlayer.makeMove();
@@ -73,12 +73,11 @@ package com.bptn.course.course_Week2_FourInARow;
 	                printWinner(currentPlayer);
 	                noWinner = false;
 	            } else {
-	                currentPlayerIndex = (currentPlayerIndex + 1) % players.length;// reassign the variable to allow the game to continue. Note the index would wrap back to the first player if we are at the end. Think of using modulus (%).
+	                currentPlayerIndex = (currentPlayerIndex + 1) % players.length;// reassign the variable 
 	            }
 	        }
 	    }
 
 	}
-
 
 }
