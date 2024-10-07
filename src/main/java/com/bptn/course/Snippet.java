@@ -2,13 +2,14 @@ package com.bptn.course;
 
 public class Snippet {
 	public int getSalary() {
-	        return salary;
-	    }
+		return salary;
+	}
 
 	public int getSalary() {
-	        return salary;
-	    }
+		return salary;
 	}
-	}
-}
 
+	•
+
+	Fresh Tomatoes
+}}}
