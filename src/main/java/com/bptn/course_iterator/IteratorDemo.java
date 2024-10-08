@@ -1,19 +1,27 @@
 package com.bptn.course_iterator;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class IteratorDemo {
 
-	ArrayList<String> myBooks = new ArrayList<>();
+	public static void main(String[] args) {
 
-	// Add 3 favorite books to this list
-	myBooks.add("Dark Matter".toLowerCase());myBooks.add("Charlie and the Chocolate Factory".toLowerCase());myBooks.add("Harry Potter".toLowerCase());
+		ArrayList<String> myBooks = new ArrayList<>();
 
-	// Display all books
-	Iterator<String> iterator = myBooks.iterator();
+		// Add 3 favorite books to this list
+		myBooks.add("Dark Matter".toLowerCase());
+		myBooks.add("Charlie and the Chocolate Factory".toLowerCase());
+		myBooks.add("Harry Potter".toLowerCase());
 
-	while(iterator.hasNext())
-	{
-		String bookName = iterator.next();
-		System.out.println(bookName);
+		// Display all books
+		Iterator<String> iterator = myBooks.iterator();
+
+		while (iterator.hasNext()) {
+			String bookName = iterator.next();
+			System.out.println(bookName);
+		}
+
 	}
 
 }
