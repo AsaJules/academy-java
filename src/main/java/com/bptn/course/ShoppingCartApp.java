@@ -1,3 +1,4 @@
+package com.bptn.course;
 
 public class ShoppingCartApp {
 

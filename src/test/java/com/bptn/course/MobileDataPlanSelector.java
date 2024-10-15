@@ -1,4 +1,4 @@
-package com.bptn.course.course_MobileDataPlanSelector;
+package com.bptn.course;
 import java.util.Scanner;
 
 public class MobileDataPlanSelector {

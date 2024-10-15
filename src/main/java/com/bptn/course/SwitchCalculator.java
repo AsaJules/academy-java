@@ -1,3 +1,4 @@
+package com.bptn.course;
 import java.util.Scanner;
 public class SwitchCalculator {
 
